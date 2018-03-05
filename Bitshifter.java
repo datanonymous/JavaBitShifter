@@ -9,7 +9,7 @@ public class Bitshifter {
             ch = key.charAt(i);
             ch += newSeed;
             result += ch;
-            newSeed += 1;
+            newSeed += i; // can also use 1 rather than i to see how it's put together
         }
         return result;
     }
@@ -23,7 +23,7 @@ public class Bitshifter {
             ch = key.charAt(i);
             ch -= newSeed;
             result += ch;
-            newSeed += 1;
+            newSeed += i;
         }
         return result;
     }
